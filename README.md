@@ -1,4 +1,8 @@
-# JvWeather
+# Clima Mundial
+
+Projeto para consulta de clima e previsão do tempo no mundo , via API de Openweathermap.org
+
+## Angular CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
