@@ -2,6 +2,14 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+body {
+  background: linear-gradient(0deg, rgba(22,86,121,1) 25%, rgba(93,201,237,1) 75%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 a:not([href]), a:not([href]):hover {
   color: $primary;
   text-decoration: none;

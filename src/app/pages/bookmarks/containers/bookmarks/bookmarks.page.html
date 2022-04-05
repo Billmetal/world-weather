@@ -2,7 +2,7 @@
   <div class="bookmarks-container">
 
     <div>
-      <h3>Favoritos</h3>
+      <h3><strong>Favoritos</strong></h3>
 
       <div *ngIf="!(bookmarks$ | async).length">Nenhum favorito adicionado</div>
 
@@ -10,7 +10,7 @@
         <li *ngFor="let bookmark of bookmarks$ | async">
           <a [routerLink]="['../details']"
              [queryParams]="{lat: bookmark.coord.lat, lon: bookmark.coord.lon}">
-            {{ bookmark.name }}
+            {{ bookmark.name }} , {{ bookmark.country }}
           </a>
           <button class="btn btn-outline-dark btn-sm"
                   (click)="removeBookmark(bookmark.id)">X</button>
@@ -20,7 +20,7 @@
     </div>
 
     <div>
-      <label>Adicionar cidade aos favoritos</label>
+      <label><strong>Adicionar cidade aos favoritos</strong></label>
       <jv-cities-typeahead [formControl]="searchTypeaheadControl"></jv-cities-typeahead>
     </div>
 

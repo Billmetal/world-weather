@@ -5,7 +5,8 @@
   .search-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 16px;
+    column-gap: 10%;
+    margin-bottom: 30px;
 
     > div {
       width: 100%;
@@ -20,4 +21,11 @@
       }
     }
   }
+}
+
+.tryagain {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Lucida Sans', sans-serif;
 }

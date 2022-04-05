@@ -4,5 +4,18 @@
 
   .current-card {
     padding: 16px;
+    box-shadow: 30px;
+    margin: 12px 10%;
   }
+}
+
+h1 {
+  text-align: center;
+}
+
+.err {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Lucida Sans', sans-serif;
 }

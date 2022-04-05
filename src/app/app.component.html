@@ -1,24 +1,33 @@
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand">JV Weather</a>
 
-  <div id="navbar-portal-outlet"></div>
+<nav class="navbar">
+  <a class="nav-title">Clima Mundial</a>
 </nav>
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-3 bg-light border-right">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/">Início</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/bookmarks">Favoritos</a>
-        </li>
-      </ul>
+    <div class="col-lg-12">
+      <div class="bg-nav">
+        <ul class="nav flex-column">
+          <li class="nav-item" >
+            <a class="nav-link active" routerLink="/" (click)="activateClass(act)"
+            [ngClass]="{'active': act === true}"><strong>Início</strong></a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" routerLink="/bookmarks" (click)="activateClass(act2)"
+            [ngClass]="{'active': act2 === true}"><strong>Favoritos</strong></a>
+          </li>
+          <li style="float: right">
+            <div class="nav-link" id="navbar-portal-outlet"></div>
+          </li>
+        </ul>
+      </div>
+      
     </div>
-
-    <div class="col-sm-9">
+  </div> 
+  <div class="row">
+    <div class="col-sm-12">
       <router-outlet></router-outlet>
     </div>
   </div>
 </div>
+

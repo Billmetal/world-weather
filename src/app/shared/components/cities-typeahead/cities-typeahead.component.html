@@ -10,7 +10,7 @@
        class="form-control"
        placeholder="Pesquisar">
 
-<div *ngIf="loading">Carregando</div>
+<div class="load" *ngIf="loading"><strong>Carregando</strong></div>
 
 <ng-template let-item="item" #itemTemplate>
   <span>{{ item.name }}, {{ item.country }}</span>

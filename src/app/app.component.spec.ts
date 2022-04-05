@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'jv-weather'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('jv-weather');
+    expect(app.title).toEqual('Clima Mundial');
   });
 
   it('should render title', () => {

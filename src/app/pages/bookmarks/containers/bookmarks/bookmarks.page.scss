@@ -5,6 +5,25 @@
   .bookmarks-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 16px;
+    column-gap: 16px;
   }
+}
+
+li {
+  margin: 12px 0px;
+
+  > a {
+    background-color: white;
+    padding: 8px 12px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+}
+
+.btn {
+  align-content: center;
+  margin-left: 20px;
+  stroke-width: 4px;
+  font-weight: bold;
 }

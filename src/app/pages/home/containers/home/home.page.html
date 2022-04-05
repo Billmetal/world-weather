@@ -3,7 +3,7 @@
   <div class="search-container">
 
     <div class="form-group">
-      <label>Pesquisar</label>
+      <label><strong>Pesquisar</strong></label>
       <div>
         <input class="form-control" [formControl]="searchControl">
         <button class="btn btn-dark"
@@ -13,7 +13,7 @@
     </div>
 
     <div class="form-group">
-      <label>Pesquisar com <i>autocomplete</i></label>
+      <label><strong>Pesquisar com <i>autocomplete</i></strong></label>
       <jv-cities-typeahead [formControl]="searchControlWithAutocomplete"></jv-cities-typeahead>
     </div>
 
@@ -29,7 +29,7 @@
   </div>
 
   <div *ngIf="!(loading$ | async) && error$ | async">
-    <a>Tentar novamente</a>
+    <a class="tryagain"><strong>Tentar novamente</strong></a>
   </div>
 
 </div>

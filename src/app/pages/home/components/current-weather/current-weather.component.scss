@@ -1,0 +1,17 @@
+.card {
+    box-shadow: 30px;
+    margin: 0px 10%;
+}
+
+.card-actions {
+    margin-top: 35px;
+
+    > a {
+        background-color: #0d3a9ceb;
+        padding: 8px 10px;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        font-size: medium;
+    }
+}

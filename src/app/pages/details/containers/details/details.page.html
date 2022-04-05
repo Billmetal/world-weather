@@ -17,7 +17,7 @@
                         [unit]="unit$ | async"></jv-daily-weather>
     </ng-container>
 
-    <div *ngIf="error$ | async">Erro</div>
+    <div class="err" *ngIf="error$ | async"><strong>Erro</strong></div>
   </ng-template>
 
 </div>

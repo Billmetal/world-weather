@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, ComponentFactoryResolver, ApplicationRef, Injector } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { PortalOutlet, DomPortalOutlet, ComponentPortal } from '@angular/cdk/portal';
+import { PortalOutlet, DomPortalOutlet, ComponentPortal, Portal } from '@angular/cdk/portal';
 
 import { select, Store } from '@ngrx/store';
 import { Observable, Subject, combineLatest } from 'rxjs';
@@ -104,13 +104,13 @@ export class HomePage implements OnInit, OnDestroy {
   }
 
   private setupPortal() {
-    const el = document.querySelector('#navbar-portal-outlet');
+    const el = document.querySelector('#navbar-portal-outlet');   
     this.portalOutlet = new DomPortalOutlet(
       el,
       this.componentFactoryResolver,
       this.appRef,
       this.injector,
     );
-    this.portalOutlet.attach(new ComponentPortal(UnitSelectorComponent));
+    this.portalOutlet.attach(new ComponentPortal(UnitSelectorComponent));   
   }
 }

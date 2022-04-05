@@ -10,7 +10,20 @@ import 'moment/locale/pt-br';
 })
 export class AppComponent {
 
+  act: boolean = true;
+  act2: boolean = false;
+
   constructor() {
     moment.locale('pt-br');
+  }
+
+  activateClass(a: boolean){
+    if(a === this.act){
+      this.act = true;
+      this.act2 = false;
+    } else {
+      this.act = false;
+      this.act2 = true;
+    }
   }
 }
